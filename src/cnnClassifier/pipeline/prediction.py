@@ -23,8 +23,8 @@ class PredictionPipeline:
         print(result)
 
         if result[0] == 1:
-            prediction = 'Looks like the kidney is NORMAL'
+            prediction = 'Kidney have issue'
             return [{ "image" : prediction}]
         else:
-            prediction = 'Looks like the kidney contains stones or tumor'
+            prediction = 'Kidney is Normal'
             return [{ "image" : prediction}]
